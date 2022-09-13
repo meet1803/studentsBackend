@@ -26,12 +26,12 @@ public class securityconfig extends WebSecurityConfigurerAdapter {
                             User.withUsername("mohit")
                                     .password("meet1803")
                                     .roles("ADMIN")
+                    )
+                    .withUser(
+                                User.withUsername("user")
+                                        .password("user")
+                                        .roles("USER")
                     );
-//                    .withUser(
-//                                User.withUsername("user")
-//                                        .password("user")
-//                                        .roles("USER")
-//                    );
 
 //        auth.inMemoryAuthentication()
 //                .withUser("mohit")
