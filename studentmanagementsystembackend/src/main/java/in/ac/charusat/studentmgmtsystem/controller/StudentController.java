@@ -41,6 +41,7 @@ public class StudentController {
 
     // Get the student information
     @GetMapping("/student/{id}")
+
     public Student getStudent(@PathVariable Integer id) {
         return studentRepository.findById(id).get();
     }
